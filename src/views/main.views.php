@@ -1,9 +1,7 @@
 <!-- NAVBAR -->
 
 <div class="container-fluid">
-			
 			<div class="row">
-				
 				<!-- SIDEBAR -->
 				<div class="col-sm-2 d-sm-block d-none bg-light sidebar">
 					
@@ -36,7 +34,7 @@
 						<div class="row bg-light m-2">
 							<div class="col">
 								<label>
-									/Productos
+									Productos
 								</label>
 							</div>
 							<div class="col">
@@ -50,11 +48,7 @@
 					<section>
 						
 						<div class="row">
-							
-							<?php for ($i=0; $i < 12; $i++): ?>
-
 							<div class="col-md-4 col-sm-12"> 
-
 								<div class="card mb-2">
 								  <img src="../public/img/logo.png" class="card-img-top" alt="...">
 								  <div class="card-body">
@@ -78,20 +72,11 @@
 								</div>  
 
 							</div>
-
-							<?php endfor; ?>
-
 						</div>
-
 					</section> 
-
-					 
 				</div>
-
 			</div>
-
 		</div>
-
 		<!-- Modal -->
 		<div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog">
@@ -105,13 +90,11 @@
 
 			      <div class="modal-body">
 			        
-			        <?php for ($i=0; $i < 6; $i++): ?>
 			        <div class="input-group mb-3">
 					  <span class="input-group-text" id="basic-addon1">@</span>
 					  <input required type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
 					</div>
-					<?php endfor; ?>
-
+					
 			      </div>
 
 			      <div class="modal-footer">
@@ -128,27 +111,6 @@
 		    </div>
 		  </div>
 		</div>
-
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-		<script type="text/javascript">
-			function eliminar(target)
-			{
-				swal({
-				  title: "Are you sure?",
-				  text: "Once deleted, you will not be able to recover this imaginary file!",
-				  icon: "warning",
-				  buttons: true,
-				  dangerMode: true,
-				})
-				.then((willDelete) => {
-				  if (willDelete) {
-				    swal("Poof! Your imaginary file has been deleted!", {
-				      icon: "success",
-				    });
-				  } else {
-				    swal("Your imaginary file is safe!");
-				  }
-				});
-			}
-		</script>
+		
+		<?php include_once "js.views.php"?>
+</div>
